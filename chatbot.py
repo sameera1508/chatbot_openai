@@ -3,8 +3,8 @@ import streamlit as st
 
 with st.sidebar:
     openai_api_key = st.text_input("OpenAI API key",key="chatbot_api_key",type="password")
-st.title("🎶🍨 Chatbot")
-st.caption("🎢 A streamlit chatbot created by SS")
+st.title("🤖 Chatbot")
+st.caption("A streamlit chatbot created by sameera_shaik")
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant","content": "How can i help you?"}]
 for msg in st.session_state.messages:
